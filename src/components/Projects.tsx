@@ -121,7 +121,7 @@ const Projects = () => {
           
           <div className="text-center bg-gray-800/30 p-6 rounded-xl border border-gray-700">
             <Zap className="text-cyan-400 mx-auto mb-3" size={32} />
-            <h4 className="text-2xl font-bold text-white mb-2">100%</h4>
+            <h4 className="text-2xl font-bold text-white mb-2">70%</h4>
             <p className="text-gray-400">Project Completion</p>
           </div>
         </div>

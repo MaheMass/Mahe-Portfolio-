@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GraduationCap, Code, Lightbulb, Heart } from 'lucide-react';
 
@@ -20,12 +19,9 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-cyan-500 rounded-lg transform -rotate-3 opacity-20"></div>
               <div className="relative w-full h-full bg-gray-800 rounded-lg flex items-center justify-center border border-gray-700">
                 <div className="relative w-full h-full bg-gray-800 rounded-lg flex items-center justify-center border border-gray-700 overflow-hidden">
-  <img 
-    src="/images/profile.jpg" 
-    alt="Mahendhiran S" 
-    className="object-cover w-full h-full rounded-lg hover:scale-105 transition-transform duration-300"
-  />
-</div>
+                  {/* Replaced img tag with Code icon */}
+                  <Code size={128} className="text-cyan-400" /> {/* You can adjust size and color */}
+                </div>
               </div>
             </div>
           </div>
@@ -39,7 +35,6 @@ const About = () => {
                Passionate Computer Science student at Nandha Engineering College, pursuing a B.E. in CSE. 
                I enjoy solving problems and building digital solutions with a focus on full-stack development, 
                databases, and modern web technologies. Outside coding, I love traveling, photography, cooking, drawing, playing chess, and reading.
-
               </p>
             </div>
 
@@ -54,8 +49,8 @@ const About = () => {
               <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-green-500 transition-all duration-300">
                 <Code className="text-green-400 mb-2" size={24} />
                 <h4 className="text-white font-semibold">Development</h4>
-                <p className="text-gray-400 text-sm">Full Stack Developer</p>
-                <p className="text-gray-400 text-xs">MERN Stack Expert</p>
+                <p className="text-gray-400 text-sm">Full Stack Development</p>
+                <p className="text-gray-400 text-xs">UIUX</p>
               </div>
               
               <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-cyan-500 transition-all duration-300">

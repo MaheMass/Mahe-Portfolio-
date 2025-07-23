@@ -8,8 +8,8 @@ const Skills = () => {
       skills: [
         { name: "Java", level: 60, icon: "☕" },
         
-        { name: "Python", level: 45, icon: "🐍" },
-        { name: "C", level: 45, icon: "⚡" },
+        { name: "Python", level: 40, icon: "🐍" },
+        { name: "C", level: 40, icon: "⚡" },
         
       ]
     },
@@ -17,7 +17,7 @@ const Skills = () => {
       title: "Web Technologies",
       skills: [
         { name: "HTML5", level: 90, icon: "🌐" },
-        { name: "CSS3", level: 70, icon: "🎨" },
+        { name: "CSS3", level: 60, icon: "🎨" },
         { name: "React.js", level: 50, icon: "⚛️" },
         { name: "Bootstrap", level: 50, icon: "📱" },
       ]
@@ -25,8 +25,8 @@ const Skills = () => {
     {
       title: "Databases",
       skills: [
-        { name: "MySQL", level: 50, icon: "🗄️" },
-        { name: "MongoDB", level: 50, icon: "🍃" },
+        { name: "MySQL", level: 45, icon: "🗄️" },
+        { name: "MongoDB", level: 45, icon: "🍃" },
        
       ]
     },

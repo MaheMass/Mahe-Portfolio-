@@ -38,7 +38,7 @@ const Achievements = () => {
       degree: "B.E. Computer Science and Engineering",
       institution: "Nandha Engineering College",
       period: "Nov 2022 – Present",
-      status: "Current",
+      status: "6.6%",
       icon: GraduationCap,
       color: "from-cyan-400 to-green-500"
     },
