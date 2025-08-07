@@ -58,29 +58,47 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-center flex-wrap gap-4 mb-12">
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group p-4 bg-gray-800/50 rounded-full hover:bg-cyan-500/20 transition-all duration-300 border border-gray-700 hover:border-cyan-500"
-          >
-            <Github size={24} className="text-gray-300 group-hover:text-cyan-400 transition-colors duration-300" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/mahendhiran-sakthivel-50ab5a255/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group p-4 bg-gray-800/50 rounded-full hover:bg-blue-500/20 transition-all duration-300 border border-gray-700 hover:border-blue-500"
-          >
-            <Linkedin size={24} className="text-gray-300 group-hover:text-blue-400 transition-colors duration-300" />
-          </a>
-          <a
-            href="mailto:mahendhiran23092003@gmail.com"
-            className="group p-4 bg-gray-800/50 rounded-full hover:bg-green-500/20 transition-all duration-300 border border-gray-700 hover:border-green-500"
-          >
-            <Mail size={24} className="text-gray-300 group-hover:text-green-400 transition-colors duration-300" />
-          </a>
-        </div>
+  <a
+    href="https://github.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group p-4 bg-gray-800/50 rounded-full hover:bg-cyan-500/20 transition-all duration-300 border border-gray-700 hover:border-cyan-500"
+  >
+    <Github size={24} className="text-gray-300 group-hover:text-cyan-400 transition-colors duration-300" />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/mahendhiran-sakthivel-50ab5a255/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group p-4 bg-gray-800/50 rounded-full hover:bg-blue-500/20 transition-all duration-300 border border-gray-700 hover:border-blue-500"
+  >
+    <Linkedin size={24} className="text-gray-300 group-hover:text-blue-400 transition-colors duration-300" />
+  </a>
+
+  <a
+    href="mailto:mahendhiran23092003@gmail.com"
+    className="group p-4 bg-gray-800/50 rounded-full hover:bg-green-500/20 transition-all duration-300 border border-gray-700 hover:border-green-500"
+  >
+    <Mail size={24} className="text-gray-300 group-hover:text-green-400 transition-colors duration-300" />
+  </a>
+
+  <a
+    href="https://leetcode.com/u/mahendhiran23092003/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group p-4 bg-gray-800/50 rounded-full hover:bg-yellow-500/20 transition-all duration-300 border border-gray-700 hover:border-yellow-400"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-6 h-6 fill-yellow-400 group-hover:fill-yellow-500 transition-colors duration-300"
+      viewBox="0 0 24 24"
+    >
+      <path d="M13.634 9.857 11.48 12l2.154 2.143 1.434-1.433-0.72-.71H22V10h-7.652l0.72-.71-1.434-1.433zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm0 21.75C6.07 21.75 1.25 16.93 1.25 11S6.07 0.25 12 0.25 22.75 5.07 22.75 11 17.93 21.75 12 21.75z" />
+    </svg>
+  </a>
+</div>
+
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
