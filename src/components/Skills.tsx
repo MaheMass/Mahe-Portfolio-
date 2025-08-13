@@ -1,44 +1,45 @@
-
 import React from 'react';
+import { 
+  FaReact, FaNodeJs, FaGitAlt, FaGithub, FaFigma, FaJava, FaPython, FaBootstrap, FaHtml5, FaCss3Alt 
+} from "react-icons/fa";
+import { 
+  SiMongodb, SiMysql, SiC, SiPowers 
+} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc"; // ✅ Correct VS Code icon
 
 const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
       skills: [
-        { name: "Java", level: 60, icon: "☕" },
-        
-        { name: "Python", level: 40, icon: "🐍" },
-        { name: "C", level: 40, icon: "⚡" },
-        
+        { name: "Java", level: 60, icon: <FaJava className="text-red-500" /> },
+        { name: "Python", level: 40, icon: <FaPython className="text-yellow-400" /> },
+        { name: "C", level: 40, icon: <SiC className="text-blue-500" /> },
       ]
     },
     {
       title: "Web Technologies",
       skills: [
-        { name: "HTML5", level: 90, icon: "🌐" },
-        { name: "CSS3", level: 60, icon: "🎨" },
-        { name: "React.js", level: 50, icon: "⚛️" },
-        { name: "Bootstrap", level: 50, icon: "📱" },
+        { name: "HTML5", level: 90, icon: <FaHtml5 className="text-orange-500" /> },
+        { name: "CSS3", level: 60, icon: <FaCss3Alt className="text-blue-500" /> },
+        { name: "React.js", level: 50, icon: <FaReact className="text-sky-400" /> },
+        { name: "Bootstrap", level: 50, icon: <FaBootstrap className="text-purple-500" /> },
       ]
     },
     {
       title: "Databases",
       skills: [
-        { name: "MySQL", level: 45, icon: "🗄️" },
-        { name: "MongoDB", level: 45, icon: "🍃" },
-       
+        { name: "MySQL", level: 45, icon: <SiMysql className="text-blue-400" /> },
+        { name: "MongoDB", level: 45, icon: <SiMongodb className="text-green-400" /> },
       ]
     },
     {
       title: "Tools & Software",
       skills: [
-        
-        { name: "VS Code", level: 95, icon: "💻" },
-        
-        { name: "Figma", level: 80, icon: "🎯" },
-        { name: "Git", level: 70, icon: "🔧" },
-        { name: "Power BI", level: 60, icon: "📊" },
+        { name: "VS Code", level: 95, icon: <VscVscode className="text-blue-500" /> },
+        { name: "Figma", level: 80, icon: <FaFigma className="text-pink-500" /> },
+        { name: "Git", level: 70, icon: <FaGitAlt className="text-orange-500" /> },
+        { name: "Power BI", level: 60, icon: <SiPowers className="text-yellow-500" /> },
       ]
     }
   ];
@@ -46,6 +47,7 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20">
       <div className="max-w-6xl mx-auto px-4">
+        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
             Skills & Technologies
@@ -56,6 +58,7 @@ const Skills = () => {
           </p>
         </div>
 
+        {/* Skill Categories */}
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <div 
@@ -99,20 +102,20 @@ const Skills = () => {
           <h3 className="text-2xl font-semibold text-center text-white mb-8">Tech Stack</h3>
           <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
             {[
-              { name: "React", icon: "⚛️" },
-              { name: "Node.js", icon: "🟢" },
-              { name: "MongoDB", icon: "🍃" },
-              { name: "MySQL", icon: "🗄️" },
-              { name: "Git", icon: "🔧" },
-              { name: "GitHub", icon: "🐙" },
-              { name: "VS Code", icon: "💻" },
-              { name: "Figma", icon: "🎯" },
+              { name: "React", icon: <FaReact className="text-sky-400" /> },
+              { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+              { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
+              { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
+              { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
+              { name: "GitHub", icon: <FaGithub className="text-gray-200" /> },
+              { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
+              { name: "Figma", icon: <FaFigma className="text-pink-500" /> },
             ].map((tech) => (
-              <div 
+              <div
                 key={tech.name}
                 className="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-cyan-500 transition-all duration-300 text-center group hover:transform hover:scale-105"
               >
-                <div className="text-2xl mb-2 group-hover:animate-bounce">{tech.icon}</div>
+                <div className="text-4xl mb-2 group-hover:animate-bounce">{tech.icon}</div>
                 <p className="text-gray-300 text-sm">{tech.name}</p>
               </div>
             ))}

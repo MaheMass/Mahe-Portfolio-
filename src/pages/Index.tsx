@@ -4,11 +4,12 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
-//import Internship from '@/components/Internship';
+import Certificates from '@/components/certificates'; // ✅ renamed
 import Achievements from '@/components/Achievements';
 import Contact from '@/components/Contact';
 import Navigation from '@/components/Navigation';
 import ParticleBackground from '@/components/ParticleBackground';
+import { Certificate } from 'crypto';
 
 const Index = () => {
   return (
@@ -20,7 +21,7 @@ const Index = () => {
         <About />
         <Skills />
         <Projects />
-        {/* <Internship /> */}
+      <Certificates />
         <Achievements />
         <Contact />
       </div>

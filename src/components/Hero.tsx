@@ -4,7 +4,7 @@ import { Github, Mail, User, Linkedin, Download } from 'lucide-react';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
-  const fullText = 'Computer Science Student | Frontend Developer | UI designer';
+  const fullText = ' Frontend Developer | UI designer';
 
   useEffect(() => {
     let i = 0;

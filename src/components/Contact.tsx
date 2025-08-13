@@ -1,7 +1,7 @@
-
 import React, { useState } from 'react';
 import { Mail, User, MessageSquare, Send, Phone, MapPin, Github, Linkedin, Download } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,24 +23,45 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    // Replace with your EmailJS credentials
+    const SERVICE_ID = "service_3ezcn8d";
+    const TEMPLATE_ID = "template_grxdt09";
+    const PUBLIC_KEY = "hKFcL2hi1t9cLfnCL";
+
+    emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      },
+      PUBLIC_KEY
+    ).then(() => {
       toast({
         title: "Message Sent Successfully!",
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
       setFormData({ name: '', email: '', message: '' });
+    }).catch((error) => {
+      toast({
+        title: "Error Sending Message",
+        description: "Please try again later.",
+      });
+      console.error("EmailJS error:", error);
+    }).finally(() => {
       setIsSubmitting(false);
-    }, 1000);
+    });
   };
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-  link.href = '/Mahendhiran_Resume.pdf'; // Make sure this file exists in your /public folder
-  link.download = 'Mahendhiran_Resume.pdf';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+    link.href = '/Mahendhiran_Resume.pdf'; // Ensure this file is in /public
+    link.download = 'Mahendhiran_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
     toast({
       title: "Resume Download",
       description: "",
@@ -168,7 +189,6 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-white mb-6">Contact Information</h3>
-              
               <div className="space-y-4">
                 {contactInfo.map((info) => {
                   const IconComponent = info.icon;
@@ -204,7 +224,7 @@ const Contact = () => {
               </button>
             </div>
 
-            {}
+            {/* Social Links */}
             <div>
               <h4 className="text-lg font-semibold text-white mb-4">Connect with me</h4>
               <div className="flex space-x-4">

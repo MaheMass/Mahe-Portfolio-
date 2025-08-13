@@ -1,0 +1,4 @@
+git status          # should now show "modified: filename"
+git add .
+git commit -m "test change"
+git push origin main
