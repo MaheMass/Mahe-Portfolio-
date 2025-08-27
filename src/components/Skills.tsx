@@ -1,11 +1,11 @@
 import React from 'react';
 import { 
-  FaReact, FaNodeJs, FaGitAlt, FaGithub, FaFigma, FaJava, FaPython, FaBootstrap, FaHtml5, FaCss3Alt 
+  FaReact, FaNodeJs, FaGitAlt, FaGithub, FaFigma, FaJava, FaPython, FaBootstrap, FaHtml5, FaCss3Alt ,
 } from "react-icons/fa";
 import { 
-  SiMongodb, SiMysql, SiC, SiPowers 
+  SiMongodb, SiMysql, SiC, SiPowers ,SiAdobeillustrator
 } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc"; // ✅ Correct VS Code icon
+import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
   const skillCategories = [
@@ -49,23 +49,23 @@ const Skills = () => {
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
             Skills & Technologies
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-cyan-500 to-green-500 mx-auto mb-8"></div>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <div className="w-20 md:w-24 h-1 bg-gradient-to-r from-cyan-500 to-green-500 mx-auto mb-8"></div>
+          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">
             Here are the technologies and tools I work with to bring ideas to life
           </p>
         </div>
 
         {/* Skill Categories */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, categoryIndex) => (
             <div 
               key={category.title} 
               className="bg-gray-800/30 p-6 rounded-xl border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 backdrop-blur-sm"
             >
-              <h3 className="text-xl font-semibold text-white mb-6 flex items-center">
+              <h3 className="text-lg md:text-xl font-semibold text-white mb-6 flex items-center">
                 <span className="w-3 h-3 bg-gradient-to-r from-cyan-500 to-green-500 rounded-full mr-3"></span>
                 {category.title}
               </h3>
@@ -75,10 +75,10 @@ const Skills = () => {
                   <div key={skill.name} className="group">
                     <div className="flex justify-between items-center mb-2">
                       <div className="flex items-center space-x-2">
-                        <span className="text-lg">{skill.icon}</span>
-                        <span className="text-gray-300 font-medium">{skill.name}</span>
+                        <span className="text-lg md:text-xl">{skill.icon}</span>
+                        <span className="text-gray-300 font-medium text-sm md:text-base">{skill.name}</span>
                       </div>
-                      <span className="text-cyan-400 text-sm font-semibold">{skill.level}%</span>
+                      <span className="text-cyan-400 text-xs md:text-sm font-semibold">{skill.level}%</span>
                     </div>
                     
                     <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
@@ -99,24 +99,28 @@ const Skills = () => {
 
         {/* Tech Stack Grid */}
         <div className="mt-16">
-          <h3 className="text-2xl font-semibold text-center text-white mb-8">Tech Stack</h3>
-          <div className="grid grid-cols-4 md:grid-cols-8 gap-4">
+          <h3 className="text-xl md:text-2xl font-semibold text-center text-white mb-8">Tech Stack</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
             {[
-              { name: "React", icon: <FaReact className="text-sky-400" /> },
-              { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
-              { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
-              { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
-              { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
-              { name: "GitHub", icon: <FaGithub className="text-gray-200" /> },
-              { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
-              { name: "Figma", icon: <FaFigma className="text-pink-500" /> },
-            ].map((tech) => (
+  { name: "React", icon: <FaReact className="text-sky-400" /> },
+  { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+  { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
+  { name: "MySQL", icon: <SiMysql className="text-blue-400" /> },
+  { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
+  { name: "GitHub", icon: <FaGithub className="text-gray-200" /> },
+  { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
+  { name: "Figma", icon: <FaFigma className="text-pink-500" /> },
+  { name: "Adobe Illustrator", icon: <SiAdobeillustrator className="text-orange-600" /> }, // 🎨 Added
+]
+.map((tech) => (
               <div
                 key={tech.name}
-                className="bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-cyan-500 transition-all duration-300 text-center group hover:transform hover:scale-105"
+                className="bg-gray-800/50 p-3 md:p-4 rounded-lg border border-gray-700 
+                           hover:border-cyan-500 transition-all duration-300 
+                           group hover:transform hover:scale-105 text-left flex items-center space-x-3"
               >
-                <div className="text-4xl mb-2 group-hover:animate-bounce">{tech.icon}</div>
-                <p className="text-gray-300 text-sm">{tech.name}</p>
+                <div className="text-2xl md:text-4xl group-hover:animate-bounce">{tech.icon}</div>
+                <p className="text-gray-300 text-xs sm:text-sm md:text-base">{tech.name}</p>
               </div>
             ))}
           </div>
