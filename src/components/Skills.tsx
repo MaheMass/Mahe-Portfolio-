@@ -114,14 +114,19 @@ const Skills = () => {
 ]
 .map((tech) => (
               <div
-                key={tech.name}
-                className="bg-gray-800/50 p-3 md:p-4 rounded-lg border border-gray-700 
-                           hover:border-cyan-500 transition-all duration-300 
-                           group hover:transform hover:scale-105 text-left flex items-center space-x-3"
-              >
-                <div className="text-2xl md:text-4xl group-hover:animate-bounce">{tech.icon}</div>
-                <p className="text-gray-300 text-xs sm:text-sm md:text-base">{tech.name}</p>
-              </div>
+  key={tech.name}
+  className="bg-gray-800/50 p-3 md:p-4 rounded-lg border border-gray-700 
+             hover:border-cyan-500 transition-all duration-300 
+             group hover:transform hover:scale-105 text-left flex items-center space-x-3"
+>
+  <div className="text-2xl md:text-4xl group-hover:animate-bounce shrink-0">
+    {tech.icon}
+  </div>
+  <p className="text-gray-300 text-xs sm:text-sm md:text-base break-words truncate">
+    {tech.name}
+  </p>
+</div>
+
             ))}
           </div>
         </div>
