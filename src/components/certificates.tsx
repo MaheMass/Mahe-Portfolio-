@@ -5,6 +5,7 @@ import c2 from "@/assets/ctf/csc.png";
 import c3 from "@/assets/ctf/Fungame.png";
 import c4 from "@/assets/ctf/IDcard.png";
 import c5 from "@/assets/ctf/intenship.jpg"
+import c6 from "@/assets/ctf/SIH.jpg"
 
 const certificates = [
   {
@@ -26,6 +27,11 @@ const certificates = [
   {
     title: "Fullstack Development Internship - Techvolt Software Pvt. Ltd.",
     image: c5,
+  }
+  ,
+  {
+    title: "Fullstack Development Internship - Techvolt Software Pvt. Ltd.",
+    image: c6,
   }
 ];
 
