@@ -30,7 +30,7 @@ const certificates = [
   }
   ,
   {
-    title: "Fullstack Development Internship - Techvolt Software Pvt. Ltd.",
+    title: "Smart India Hackathon 2024 Grand Finale participants",
     image: c6,
   }
 ];
