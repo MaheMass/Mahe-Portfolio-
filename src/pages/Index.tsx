@@ -1,15 +1,14 @@
-
 import React from 'react';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
-import Certificates from '@/components/certificates'; // ✅ renamed
+import Certificates from '@/components/certificates';
 import Achievements from '@/components/Achievements';
 import Contact from '@/components/Contact';
 import Navigation from '@/components/Navigation';
 import ParticleBackground from '@/components/ParticleBackground';
-import { Certificate } from 'crypto';
+import Footer from '@/components/Footer'; // ✅ added footer import
 
 const Index = () => {
   return (
@@ -21,9 +20,10 @@ const Index = () => {
         <About />
         <Skills />
         <Projects />
-      <Certificates />
+        <Certificates />
         <Achievements />
         <Contact />
+        <Footer /> {/* ✅ added footer here */}
       </div>
     </div>
   );

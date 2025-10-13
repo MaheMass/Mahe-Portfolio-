@@ -59,7 +59,7 @@ const Hero = () => {
 
         <div className="flex justify-center flex-wrap gap-4 mb-12">
   <a
-    href="https://github.com"
+    href="https://github.com/MaheMass"
     target="_blank"
     rel="noopener noreferrer"
     className="group p-4 bg-gray-800/50 rounded-full hover:bg-cyan-500/20 transition-all duration-300 border border-gray-700 hover:border-cyan-500"

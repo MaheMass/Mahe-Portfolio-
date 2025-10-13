@@ -1,9 +1,11 @@
 import React from 'react';
 import { Github, ExternalLink, Code, Lightbulb, Zap } from 'lucide-react';
 import collegeEventImage from '../assets/image.jpg';
-import gallery from '../assets/imagegal.jpg';
-import studentUI from '../assets/uiux.jpg';
+import gallery from '@/assets/imagegal.jpg';
+import studentUI from '@/assets/student.jpg';
 import uiuxDesign1 from '../assets/uiux1.jpg';
+import sihDesign from '@/assets/portfolio.png'; // your SIH project image
+import donutPoster from '@/assets/donut_ui.png'; // <-- add an image for the donut poster / swipe design
 
 const Projects = () => {
   const projects = [
@@ -24,6 +26,27 @@ const Projects = () => {
       github: "https://github.com/MaheMass/Image-gallery-",
       demo: "https://demo.com",
       category: "Frontend"
+    },
+    {
+      title: "SIH Client UI Design – Smart India Hackathon",
+      description: `For my first client project, I designed the complete user interface for a Smart India Hackathon (SIH) application. The goal was to create a clean, responsive, and accessible interface that improved user navigation and clearly showcased core features. 
+      I worked on layout flow, visual hierarchy, and responsive adaptation while keeping the brand identity consistent. Designed wireframes, mockups, and high-fidelity prototypes using Figma.`,
+      image: sihDesign,
+      technologies: ["Figma", "UI Design", "Prototype", "Responsive Design"],
+      github: "",
+      demo: "https://www.figma.com/proto/mO9p8xbRf5Wo7b8nWFS1kK/SIHproject?page-id=0%3A1&node-id=478-37&viewport=-3414%2C121%2C0.2&t=7gnjYRpkYLK5T1hb-1&scaling=scale-down&content-scaling=responsive",
+      category: "UI/UX Design"
+    },
+    {
+      title: "Swipe Animation & Donut Poster Design",
+      description: `Just wrapped up a fun Swipe Animation and Donut Poster UI design in Figma. Experimented with motion effects and layout balance inspired by a YouTube tutorial. 
+      This project helped me explore interactive transitions and visual storytelling through playful design. 
+      Always learning new ways to make digital interfaces feel more alive.`,
+      image: donutPoster,
+      technologies: ["Figma", "Prototyping", "Animation", "Visual Design"],
+      github: "donutPoster",
+      demo: "https://www.figma.com/proto/Xb6JHPmYhAF4RqPStwazIj/Untitled?page-id=0%3A1&node-id=6-2&starting-point-node-id=67%3A585&scaling=scale-down&content-scaling=fixed&show-proto-sidebar=1&t=IVlSscmxYKOxIkXk-1",
+      category: "UI/UX Design"
     },
     {
       title: "Student Management System – UI/UX Design",
@@ -89,8 +112,8 @@ const Projects = () => {
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Stat icon={<Code className="text-cyan-400 mx-auto mb-3" size={32} />} title="2" subtitle="Frontend Projects" />
-          <Stat icon={<Lightbulb className="text-pink-400 mx-auto mb-3" size={32} />} title="2" subtitle="UI/UX Designs" />
-          <Stat icon={<Zap className="text-green-400 mx-auto mb-3" size={32} />} title="85%" subtitle="Project Completion" />
+          <Stat icon={<Lightbulb className="text-pink-400 mx-auto mb-3" size={32} />} title="4" subtitle="UI/UX Designs" />
+          <Stat icon={<Zap className="text-green-400 mx-auto mb-3" size={32} />} title="90%" subtitle="Project Completion" />
         </div>
       </div>
     </section>

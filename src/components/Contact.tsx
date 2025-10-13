@@ -93,13 +93,13 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/MaheMass",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/mahendhiran-sakthivel",
+      href: "https://www.linkedin.com/in/mahendhiran-sakthivel-50ab5a255/",
       color: "hover:text-blue-400"
     },
     {
