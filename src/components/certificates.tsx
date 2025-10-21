@@ -6,6 +6,7 @@ import c3 from "@/assets/ctf/Fungame.png";
 import c4 from "@/assets/ctf/IDcard.png";
 import c5 from "@/assets/ctf/intenship.jpg";
 import c6 from "@/assets/ctf/SIH.jpg";
+import c7 from "@/assets/ctf/dept2023.jpg"; // 🔹 Add your new certificate image
 
 const certificates = [
   {
@@ -43,6 +44,12 @@ const certificates = [
     title: "Smart India Hackathon 2024 Grand Finale",
     issuer: "Ministry of Education, Govt. of India",
     image: c6,
+  },
+  {
+    date: "JAN 2025",
+    title: "Department First Prize - Team Class Monitoring System",
+    issuer: "Department of Computer Science",
+    image: c7, // 🔹 Use your new image here
   },
 ];
 
